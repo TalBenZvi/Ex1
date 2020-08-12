@@ -5,7 +5,7 @@ include(CTest)
 enable_testing()
 
 set(C_STANDARD C9)
-add_executable(Ex1 main.c)
+add_library(Ex1 SHARED main.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
